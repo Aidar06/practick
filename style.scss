@@ -1,9 +1,70 @@
+@import "global";
+
 #header{
 
 }
 
 #hero{
+  background: url("/img/bgHero.png") no-repeat center/cover;
+  min-height: 100vh ;
+  position: relative;
+  .hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--block{
+      margin-top: 130px;
+      width: 55%;
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      &__title{
+        display: flex;
+        position: relative;
+        h1{
+          font-weight: 400;
+          font-size: 96px;
+          line-height: 115px;
+          color: #4FB8F8;
+        }
+        img{
+          position: absolute;
+          bottom: 10px;
+          right: 190px;
+        }
+      }
+      p{
+        margin-top: 70px;
+        font-weight: 300;
+        font-size: 22px;
+        color: #FFFFFF;
+      }
 
+      span{
+        font-weight: 300;
+        font-size: 22px;
+        color: #FFFFFF;
+        margin-top: 60px;
+      }
+
+      button{
+        margin-top: 30px;
+        padding: 10px 20px;
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: #4FB8F8;
+        border-radius: 3px;
+        border: none;
+      }
+    }
+    &--img{
+      right: 0;
+      bottom: 0;
+      position: absolute;
+    }
+  }
 }
 
 #icons{
